@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/friend_item_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="vertical" 
+    android:fadingEdge="vertical" >
+        
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+       
+    <RelativeLayout 
+        android:id="@+id/phone_info_times" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView 
+            android:id="@+id/phone_info_times_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="打开次数"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_times_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="打开次数"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_model" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/phone_info_times" >
+        <TextView 
+            android:id="@+id/phone_info_model_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机型号"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_model_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="手机型号"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_imei" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_model"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_imei_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMEI"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_imei_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="IMEI"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_country" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_imei"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_country_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_country_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="国家"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+        <RelativeLayout 
+        android:id="@+id/phone_info_num" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_country"
+        android:layout_margin="5dp" > 
+        <TextView 
+            android:id="@+id/phone_info_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="手机号"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/phone_info_num_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:hint="手机号 "
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_screen" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_num"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_screen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="分辨率"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_screen_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="分辨率"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_screen_dpi" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_screen"
+        android:layout_margin="5dp" > 
+        <TextView 
+            android:id="@+id/phone_info_screen_dpi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="DPI"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_screen_dpi_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="DPI"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_size" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_screen_dpi"
+        android:layout_margin="5dp" > 
+        <TextView 
+            android:id="@+id/phone_info_size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="尺寸"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_size_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="尺寸"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_mac" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_size"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_mac_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="MAC地址"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_mac_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="MAC地址"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_ip" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_mac"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_ip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="IP地址"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_ip_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="IP地址"
+            android:textColor="#32b3ed" />
+    	</RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_operators" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_ip"
+        android:layout_margin="5dp" > 
+        <TextView 
+            android:id="@+id/phone_info_operators_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="运营商"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_operators_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="运营商"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_sdk" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_operators"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_sdk_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="SDK版本"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_sdk_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="SDK版本"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_version" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_sdk"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_version_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Android"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_version_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="Android Version"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_manufacturer" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_version"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_manufacturer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="制造商"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_manufacturer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="制造商"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_kernel" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_manufacturer"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_kernel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Linux内核"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_kernel_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="内核版本"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/phone_info_os" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_info_kernel"
+        android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/phone_info_os_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="系统"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/phone_info_os_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:singleLine="true"
+            android:hint="系统"
+            android:textColor="#32b3ed" />
+    </RelativeLayout>
+    
+       </RelativeLayout>
+       
+</ScrollView>
+
+
+
+

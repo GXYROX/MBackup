@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_file"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_folder_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/action_sdfile"/>
+    
+    <item
+        android:id="@+id/action_export_contact"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_action_import_export_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/action_import_export_contact"/>
+    
+    <item
+        android:id="@+id/action_export_sms"
+        android:orderInCategory="102"
+        android:icon="@drawable/ic_action_import_export_sms_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/action_import_export_sms"/>
+    
+    <item
+        android:id="@+id/action_package_info"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_action_package_holo_dark"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_about_package_info"/>
+    
+    <item
+        android:id="@+id/action_phone_info"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_action_settings_about_holo_dark"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_about_phone_info"/>
+     
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="199"
+        android:icon="@drawable/ic_action_settings_holo_dark"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+
+</menu>

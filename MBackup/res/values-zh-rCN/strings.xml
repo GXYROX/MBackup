@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">魅备份</string>
+    <string name="action_keep">收藏</string>
+    <string name="action_import_export_contact">导出联系人</string>
+    <string name="action_import_export_sms">导出短信</string>
+    <string name="action_about_phone_info">关于本机</string>
+    <string name="action_about_package_info">已安装软件</string>
+    <string name="action_settings">设置</string>
+    <string name="action_sdfile">文件</string>
+    <string name="preferences_settings">设置</string>
+    <string name="about_setting">关于</string>
+    <string name="theme_setting">主题</string>
+    <string name="about_version_title">版本</string>
+    <string name="about_copyright_title">版权</string>
+    <string name="about_version_text">V0.0.1 (T039013)</string>
+    <string name="about_copyright_text">©2014 LJRFOX.STUDIO</string>
+    <string name="no_network">当前网络不可用</string>
+    <string name="empty_folder">空文件夹</string>
+    <string name="confirm">确认</string>
+    <string name="export">导出</string>
+    <string name="cancel">取消</string>
+    <string name="contacts">联系人</string>
+    <string name="sms">信息</string>
+    <string name="sms_info">确认导出短信 ?</string>
+    <string name="contacts_info">确认导出信息 ?</string>
+    <string name="exporting">导出中...</string>
+    <string name="export_info">文件已保存至：</string>
+
+    <string name="itemdeleted">已删除</string>
+    <string name="taptoundo">撤销</string>
+    
+</resources>

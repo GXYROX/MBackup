@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="setting_usual"
+        android:title="@string/preferences_settings" >
+        <Preference
+            android:icon="@drawable/ic_action_settings_about_holo_light"
+            android:key="pref_key_setting_about"
+            android:title="@string/about_setting" />
+        <Preference
+            android:icon="@drawable/ic_action_settings_theme_holo_light"
+            android:key="pref_key_setting_theme"
+            android:title="@string/theme_setting" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

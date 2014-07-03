@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="array_rate_title" >
+	    <item>默认全天</item>
+        <item>一小时</item>
+        <item>二小时</item>
+        <item>四小时</item>
+        <item>八小时</item>
+    </string-array>
+    
+    <string-array name="array_rate_value" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+    
+    <string-array name="array_style_title" >
+	    <item>默认</item>
+        <item>水平风格</item>
+        <item>竖直风格</item>
+        <item>优惠券模式</item>
+        <item>简单文本</item>
+        <item>通知栏提醒</item>
+    </string-array>
+    
+    <string-array name="array_style_value" >
+        <item>0</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+    
+</resources>
+

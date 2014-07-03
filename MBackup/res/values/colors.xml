@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_blue_bg">#FF0099CC</color>
+    <color name="actionbar_red_bg">#FFE60066</color>
+    <color name="actionbar_green_bg">#FF00B366</color>
+    <color name="actionbar_pruple_bg">#FF7a387f</color>
+    <color name="actionbar_meizu_bg">#FF61b5f5</color>
+    <color name="actionbar_light_bg">#FF90baac</color>
+    <color name="statusbar_blue_bg">#FF006080</color>
+    <color name="statusbar_red_bg">#FFFE80B9</color>
+    <color name="statusbar_green_bg">#FF80FEC8</color>
+</resources>

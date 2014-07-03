@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="CustomTheme">
+        <attr name="textAppearance" format="reference" />
+		<attr name="colorForeground" format="color" />
+    </declare-styleable>
+    
+    <!-- 滑动返回 -->
+   <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+    
+    <string-array name="array_rate_title" >
+	    <item>Default All Day</item>
+        <item>One hour</item>
+        <item>Two hour</item>
+        <item>Four hour</item>
+        <item>Eight hour</item>
+    </string-array>
+    
+    <string-array name="array_rate_value" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+    
+    <string-array name="array_style_title" >
+	    <item>Default</item>
+        <item>Pop Horizontal Style</item>
+        <item>Pop Vertical Style</item>
+        <item>Coupon Pop</item>
+        <item>Pop Simple Text</item>
+        <item>Notification</item>
+    </string-array>
+    
+    <string-array name="array_style_value" >
+        <item>0</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+    
+</resources>
+
